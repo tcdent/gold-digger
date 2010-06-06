@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Gold Digger Color Picker</title>
+	
+	<link rel="stylesheet" href="gold_digger.css" type="text/css" charset="utf-8">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="gold_digger.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		document.observe('dom:loaded', function(){
+			GoldDigger.attach('.color');
+		});
+	</script>
+</head>
+<body>
+	<p><input type="text" name="color[]" value="#ff0000" class="color"></p>
+	<p><input type="text" name="color[]" value="#00ff00" class="color"></p>
+	<p><input type="text" name="color[]" value="#ffff00" class="color"></p>
+	<p><input type="text" name="text" value="Not a color"></p>
+</body>
+</html>
