@@ -4,7 +4,7 @@ Gold Digger Color Picker
 
 Syntax
 ------
-    GoldDigger.attach(element, [options]);
+    GoldDigger.attach(element[, options]);
 
 Usage
 -----
@@ -37,6 +37,7 @@ Configuration Options
 
 TODO
 ----
+ - Saturation/value selector accuracy.
  - Update hue when slider is clicked, but not dragged.
  - Sense right edge of window and reposition accordingly.
  - Internet Explorer compatibility.

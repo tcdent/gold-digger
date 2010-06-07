@@ -5,22 +5,21 @@
  */
 
 var GoldDigger = {
-    instance: false, 
-    elements: [], 
+    instance: null, 
     
-    attach: function(elements, options){
+    attach: function(selector, options){
         if(!this.instance)
             this.instance = new GoldDigger.Base(options);
         
-        this.elements = $(elements);
-        if(!this.elements) this.elements = $$(elements);
-        if(!this.elements.length) this.elements = [this.elements];
+        elements = $(selector);
+        if(!elements) elements = $$(selector);
+        if(!elements.length) elements = [elements];
         
-        this.elements.each(function(element){
+        elements.each(function(element){
             $(element).observe('focus', function(event){
-                this.instance.attach(event.element());
-            }.bind(this));
-        }.bind(this));
+                GoldDigger.instance.attach(event.element());
+            });
+        });
     }, 
     
     normalize: function(value, max){
