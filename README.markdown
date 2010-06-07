@@ -38,6 +38,8 @@ Configuration Options
 TODO
 ----
  - Saturation/value selector accuracy.
+ - Switch to event-based updating. 
+ - De-activate hex field observer while dragging.
  - Update hue when slider is clicked, but not dragged.
  - Sense right edge of window and reposition accordingly.
  - Internet Explorer compatibility.
